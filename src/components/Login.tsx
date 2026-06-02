@@ -160,7 +160,7 @@ export default function Login({ onLoginSuccess }: LoginProps) {
           <h1 className="text-xl font-bold font-sans text-white tracking-tight uppercase">
             TransRoute
           </h1>
-          <p className="text-slate-450 text-xs mt-1">
+          <p className="text-slate-400 text-xs mt-1">
             Gestão de Frota e Controle de Caminhoneiros
           </p>
         </div>
@@ -261,7 +261,7 @@ export default function Login({ onLoginSuccess }: LoginProps) {
         {/* Formulário Principal de Login */}
         <form onSubmit={handleLogin} className="space-y-4" id="main-login-form">
           <div>
-            <label className="block text-slate-350 text-xs font-medium mb-1.5" htmlFor="username-input">
+            <label className="block text-slate-300 text-xs font-medium mb-1.5" htmlFor="username-input">
               Nome de Usuário
             </label>
             <div className="relative">
@@ -280,11 +280,11 @@ export default function Login({ onLoginSuccess }: LoginProps) {
           </div>
 
           <div>
-            <label className="block text-slate-350 text-xs font-medium mb-1.5" htmlFor="password-input">
+            <label className="block text-slate-300 text-xs font-medium mb-1.5" htmlFor="password-input">
               Senha de Acesso
             </label>
             <div className="relative">
-              <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-505">
+              <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-500">
                 <Lock className="h-4 w-4" />
               </span>
               <input
@@ -311,7 +311,7 @@ export default function Login({ onLoginSuccess }: LoginProps) {
         {/* Dicas e Acesso Rápido */}
         <div className="mt-6 pt-5 border-t border-slate-800 text-center text-xs text-slate-500 space-y-2" id="login-footer-info">
           {role === 'driver' ? (
-            <div className="flex gap-1.5 items-start text-slate-450 bg-slate-950/30 p-2.5 rounded-xl border border-slate-850 text-left text-[11px] leading-normal">
+            <div className="flex gap-1.5 items-start text-slate-400 bg-slate-950/30 p-2.5 rounded-xl border border-slate-800 text-left text-[11px] leading-normal">
               <Info className="h-4 w-4 shrink-0 text-indigo-400 mt-0.5" />
               <span>Para acessar como Motorista, o Administrador deve primeiro cadastrá-lo na tela **Motoristas** adicionando o Nome de Usuário e Senha.</span>
             </div>

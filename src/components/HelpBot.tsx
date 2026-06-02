@@ -183,7 +183,7 @@ export default function HelpBot() {
             {/* Header */}
             <div className="bg-gradient-to-r from-slate-950 to-slate-900 px-5 py-4 border-b border-slate-800 flex items-center justify-between shrink-0" id="chat-header">
               <div className="flex items-center gap-3">
-                <div className="w-9 h-9 bg-indigo-650/10 rounded-xl flex items-center justify-center border border-indigo-500/20 text-indigo-400">
+                <div className="w-9 h-9 bg-indigo-600/10 rounded-xl flex items-center justify-center border border-indigo-500/20 text-indigo-400">
                   <Bot className="h-5 w-5 animate-pulse" />
                 </div>
                 <div>
@@ -279,7 +279,7 @@ export default function HelpBot() {
             </div>
 
             {/* Quick Actions Panel */}
-            <div className="px-4 py-2 bg-slate-950 border-t border-slate-850 shrink-0 overflow-x-auto whitespace-nowrap flex gap-1.5 no-scrollbar" id="chat-quick-queries">
+            <div className="px-4 py-2 bg-slate-950 border-t border-slate-800 shrink-0 overflow-x-auto whitespace-nowrap flex gap-1.5 no-scrollbar" id="chat-quick-queries">
               {quickQuestions.map((q, idx) => (
                 <button
                   key={idx}
@@ -293,7 +293,7 @@ export default function HelpBot() {
             </div>
 
             {/* Input Bar */}
-            <div className="p-3 bg-slate-950 border-t border-slate-850 flex gap-2 items-center shrink-0" id="chat-input-bar">
+            <div className="p-3 bg-slate-950 border-t border-slate-800 flex gap-2 items-center shrink-0" id="chat-input-bar">
               <div className="flex-1 relative">
                 <input
                   type="text"
@@ -302,7 +302,7 @@ export default function HelpBot() {
                   onChange={(e) => setInput(e.target.value)}
                   onKeyDown={handleKeyDown}
                   disabled={isLoading}
-                  className="w-full bg-slate-900 border border-slate-800 rounded-xl py-2 px-3.5 text-xs text-white placeholder-slate-550 focus:outline-hidden focus:border-indigo-500/50 disabled:opacity-50"
+                  className="w-full bg-slate-900 border border-slate-800 rounded-xl py-2 px-3.5 text-xs text-white placeholder-slate-500 focus:outline-hidden focus:border-indigo-500/50 disabled:opacity-50"
                   id="chat-user-input"
                 />
                 <span className="absolute right-3.5 top-2.5 hidden sm:flex items-center gap-1 text-[8.5px] font-mono text-slate-500">
@@ -313,7 +313,7 @@ export default function HelpBot() {
               <button
                 onClick={() => handleSendMessage()}
                 disabled={isLoading || !input.trim()}
-                className="w-9 h-9 bg-indigo-600 hover:bg-indigo-550 text-white rounded-xl flex items-center justify-center transition cursor-pointer shrink-0 disabled:bg-slate-800 disabled:text-slate-650 disabled:cursor-not-allowed shadow"
+                className="w-9 h-9 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl flex items-center justify-center transition cursor-pointer shrink-0 disabled:bg-slate-800 disabled:text-slate-500 disabled:cursor-not-allowed shadow"
                 title="Enviar"
               >
                 <Send className="h-4 w-4" />
@@ -331,7 +331,7 @@ export default function HelpBot() {
         className={`w-14 h-14 rounded-full flex items-center justify-center cursor-pointer shadow-2xl border transition duration-300 relative ${
           isOpen
             ? "bg-slate-900 border-slate-800 text-slate-300 hover:bg-slate-800"
-            : "bg-indigo-600 border-indigo-500/40 text-white hover:bg-indigo-550 shadow-indigo-600/30"
+            : "bg-indigo-600 border-indigo-500/40 text-white hover:bg-indigo-500 shadow-indigo-600/30"
         }`}
         title="Assistente Virtual TransRoute"
         id="help-bot-trigger-btn"
@@ -343,7 +343,7 @@ export default function HelpBot() {
             <MessageSquare className="h-5.5 w-5.5" />
             <span className="absolute -top-1 -right-1 flex h-3 w-3">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 bg-indigo-505"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 bg-indigo-500"></span>
             </span>
           </>
         )}
