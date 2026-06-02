@@ -1,0 +1,6 @@
+{
+  "name": "Gestão de Frota e Motoristas",
+  "description": "Sistema completo para cadastrar caminhoneiros, gerenciar horários de trabalho, controle de pagamentos por hora, frota de veículos e relatórios de desempenho, integrado e pronto para o Supabase.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
