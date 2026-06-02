@@ -17,6 +17,7 @@ import WorkLogsModule from './components/WorkLogsModule';
 import PaymentsModule from './components/PaymentsModule';
 import SupabaseHelper from './components/SupabaseHelper';
 import { isSupabaseConfigured } from './supabaseClient';
+import HelpBot from './components/HelpBot';
 
 export default function App() {
   const [session, setSession] = useState<LoggedUser | null>(null);
@@ -332,6 +333,9 @@ export default function App() {
             <span>IDENTIFIER_SESSÃO: {session.role.toUpperCase()}</span>
           </div>
         </footer>
+
+        {/* Floating AI System Help Assistant */}
+        <HelpBot />
 
       </div>
 
