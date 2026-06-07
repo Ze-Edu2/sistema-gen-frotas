@@ -9,7 +9,8 @@
 
 Este projeto combina inovação em Inteligência Artificial, persistência em tempo real e facilidade de escala:
 
-- **Google AI Studio** & **Groq**: Toda a inteligência e o desenvolvimento do assistente virtual inteligente (**TransRoute Copilot**) foram projetados utilizando o **Google AI Studio**. A conversa ativa do Copilot é operada em tempo real com os modelos do **Groq** via rota de API serverless. <img width="330" height="361" alt="image" src="https://github.com/user-attachments/assets/dc342803-b2dd-41e3-b96c-1ddc26d49382" />
+- **Google AI Studio** & **Groq**: Toda a inteligência e o desenvolvimento do assistente virtual inteligente (**TransRoute Copilot**) foram projetados utilizando o **Google AI Studio**. A conversa ativa do Copilot é operada em tempo real com os modelos do **Groq** via rota de API serverless.
+<img width="330" height="361" alt="image" src="https://github.com/user-attachments/assets/dc342803-b2dd-41e3-b96c-1ddc26d49382" />
 
 - **Supabase PostgreSQL**: Sincronização em tempo real das tabelas de motoristas, veículos, registros de jornada (work logs) e pagamentos, com segurança diretamente vinculada às tabelas locais.
 - **Vercel**: Hospedagem da aplicação web estática de alta velocidade e de Serverless Functions (`/api/chat`) para prover o assistente inteligente sem expor chaves sensíveis.
