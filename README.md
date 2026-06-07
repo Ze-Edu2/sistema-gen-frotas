@@ -1,20 +1,33 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# 🚛 TransRoute
+<img width="1853" height="911" alt="genFrotas" src="https://github.com/user-attachments/assets/4fa17eda-c4a1-408a-8fd2-7b5b997ce510" />
 
-# Run and deploy your AI Studio app
+**TransRoute** é uma plataforma moderna e inteligente para gestão de frotas e controle de jornada de trabalho (bater ponto) para caminhoneiros e motoristas. Desenvolvida sob demanda com ferramentas de ponta, oferece uma experiência robusta tanto para administradores gerenciarem suas equipes quanto para os motoristas registrarem suas viagens com facilidade.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/5c9c969f-8f3e-416a-be2b-6b567af70b5e
+## 🚀 Tecnologias e Integrações
 
-## Run Locally
+Este projeto combina inovação em Inteligência Artificial, persistência em tempo real e facilidade de escala:
 
-**Prerequisites:**  Node.js
+- **Google AI Studio** & **Groq**: Toda a inteligência e o desenvolvimento do assistente virtual inteligente (**TransRoute Copilot**) foram projetados utilizando o **Google AI Studio**. A conversa ativa do Copilot é operada em tempo real com os modelos do **Groq** via rota de API serverless. <img width="330" height="361" alt="image" src="https://github.com/user-attachments/assets/dc342803-b2dd-41e3-b96c-1ddc26d49382" />
 
+- **Supabase PostgreSQL**: Sincronização em tempo real das tabelas de motoristas, veículos, registros de jornada (work logs) e pagamentos, com segurança diretamente vinculada às tabelas locais.
+- **Vercel**: Hospedagem da aplicação web estática de alta velocidade e de Serverless Functions (`/api/chat`) para prover o assistente inteligente sem expor chaves sensíveis.
+- **React, Vite & Tailwind CSS**: Interface de usuário responsiva, otimizada, moderna e com estética dark mode profissional.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+
+## 🛠️ Funcionalidades Principais
+
+1. **Painel do Administrador (ADM)**:
+   - Registro de motoristas e veículos na frota.
+   - Revisão e aprovação de horas brutas de ponto registradas.
+   - Pagamento de faturas e controle financeiro consolidado.
+2. **Painel do Motorista**:
+   - Registro de jornada simplificado (Iniciar e Finalizar Ponto em Viagem).
+   - Acompanhamento de horas pendentes de validação e estimativa de ganhos acumulados.
+3. **TransRoute Copilot**:
+   - Assistente virtual ativado por IA.
+   - Fornece respostas sobre o sistema e lê **dados em tempo real das tabelas correspondentes** (exemplo: quantidade total de motoristas, status de frotas de caminhões ou folha de ponto).
+
+---
